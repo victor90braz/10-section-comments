@@ -210,3 +210,8 @@ Handle input values:
 # comment section
 
 php artisan make:model Comment -mfc
+
+# database
+
+php artisan migrate:fresh
+php artisan migrate:fresh --seed
