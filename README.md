@@ -206,3 +206,7 @@ Handle input values:
     value="{{ old('name') }}"
 />
 ```
+
+# comment section
+
+php artisan make:model Comment -mfc
