@@ -52,9 +52,8 @@
     </section>
 
     <section class="col-span-8 col-start-5 mt-10 space-y-6">
-        <x-post-comment />
-        <x-post-comment />
-        <x-post-comment />
-        <x-post-comment />
+        @foreach ($comments as $comment)
+            <x-post-comment :comment="$comment"/>
+        @endforeach
     </section>
 </x-layout>
