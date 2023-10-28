@@ -11,7 +11,7 @@ class Post extends Model
 
     protected $guarded = [];
 
-    protected $with = ['category', 'author'];
+    protected $with = ['category', 'author', 'comments'];
 
     public function scopeFilter($query, array $filters)
     {
