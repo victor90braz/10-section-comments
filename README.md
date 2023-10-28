@@ -1,7 +1,7 @@
 ````markdown
 # Laravel Database Interaction README
 
-**GitHub Repository:** [09-section Repository](https://github.com/victor90braz/09-section-register.git)
+**GitHub Repository:** [10-section Repository](https://github.com/victor90braz/10-section-comments.git)
 
 ## Introduction
 
