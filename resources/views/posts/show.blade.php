@@ -45,10 +45,30 @@
                         {{ $post->title }}
                     </h1>
 
-                    <div class="space-y-4 lg:text-lg leading-loose">{!! $post->body !!}</div>
+                    <div class="space-y-4 text-base leading-loose">{!! $post->body !!}</div>
                 </div>
             </article>
         </main>
+    </section>
+
+    <section>
+        <form action="#" method="POST" class="border border-gray-200 p-6 rounded-xl">
+            @csrf
+
+            <header class="flex justify-center items-center">
+                @auth
+                    <img class="rounded-full" src="https://i.pravatar.cc/100?u={{ auth()->user()->id }}" alt="avatar user" style="width: 100px">
+                @else
+                    <img class="rounded-full" src="https://i.pravatar.cc/100" alt="default avatar" width="100">
+                @endauth
+
+                <h2 class="ml-4">Want to participate?</h2>
+            </header>
+
+            <main class="mt-6">
+                <textarea name="body" class="w-full text-sm focus:outline-none focus:ring p-2" cols="30" rows="10" placeholder="Quick, thing of something to say!"></textarea>
+            </main>
+        </form>
     </section>
 
     <section class="col-span-8 col-start-5 mt-10 space-y-6">
@@ -56,5 +76,4 @@
             <x-post-comment :comment="$comment"/>
         @endforeach
     </section>
-
 </x-layout>
