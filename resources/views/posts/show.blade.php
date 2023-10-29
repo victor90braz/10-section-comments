@@ -82,7 +82,7 @@
     </section>
 
     <section class="col-span-8 col-start-5 mt-10 space-y-6">
-        @foreach ($post->comments as $comment)
+        @foreach ($post->comments->reverse() as $comment)
             <x-post-comment :comment="$comment"/>
         @endforeach
     </section>
