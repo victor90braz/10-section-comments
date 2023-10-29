@@ -52,29 +52,31 @@
     </section>
 
     <section>
-        <form action="#" method="POST" class="border border-gray-200 p-6 rounded-xl">
-            @csrf
+        <x-panel>
+            <form action="#" method="POST">
+                @csrf
 
-            <header class="flex justify-center items-center">
-                @auth
-                    <img class="rounded-full" src="https://i.pravatar.cc/100?u={{ auth()->user()->id }}" alt="avatar user" style="width: 100px">
-                @else
-                    <img class="rounded-full" src="https://i.pravatar.cc/100" alt="default avatar" width="100">
-                @endauth
+                <header class="flex justify-center items-center">
+                    @auth
+                        <img class="rounded-full" src="https://i.pravatar.cc/100?u={{ auth()->user()->id }}" alt="avatar user" style="width: 100px">
+                    @else
+                        <img class="rounded-full" src="https://i.pravatar.cc/100" alt="default avatar" width="100">
+                    @endauth
 
-                <h2 class="ml-4">Want to participate?</h2>
-            </header>
+                    <h2 class="ml-4">Want to participate?</h2>
+                </header>
 
-            <main class="mt-6">
-                <textarea name="body" class="w-full text-sm focus:outline-none focus:ring p-2 border border border-gray-300" cols="30" rows="5" placeholder="Quick, think of something to say!">
+                <main class="mt-6">
+                    <textarea name="body" class="w-full text-sm focus:outline-none focus:ring p-2 border border border-gray-300" cols="30" rows="5" placeholder="Quick, think of something to say!">
 
-                </textarea>
-            </main>
+                    </textarea>
+                </main>
 
-            <div class="mt-2 flex justify-end pt-6">
-                <button type="submit" class="bg-blue-500 text-white uppercase font-semibold text-xs py-2 px-10 rounded-2xl hover:bg-blue-600">Post</button>
-            </div>
-        </form>
+                <div class="mt-2 flex justify-end pt-6">
+                    <button type="submit" class="bg-blue-500 text-white uppercase font-semibold text-xs py-2 px-10 rounded-2xl hover:bg-blue-600">Post</button>
+                </div>
+            </form>
+        </x-panel>
     </section>
 
     <section class="col-span-8 col-start-5 mt-10 space-y-6">
