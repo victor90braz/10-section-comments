@@ -66,10 +66,12 @@
             </header>
 
             <main class="mt-6">
-                <textarea name="body" class="w-full text-sm focus:outline-none focus:ring p-2" cols="30" rows="10" placeholder="Quick, thing of something to say!"></textarea>
+                <textarea name="body" class="w-full text-sm focus:outline-none focus:ring p-2 border border border-gray-300" cols="30" rows="5" placeholder="Quick, think of something to say!">
+
+                </textarea>
             </main>
 
-            <div class="mt-2 flex justify-end">
+            <div class="mt-2 flex justify-end pt-6">
                 <button type="submit" class="bg-blue-500 text-white uppercase font-semibold text-xs py-2 px-10 rounded-2xl hover:bg-blue-600">Post</button>
             </div>
         </form>
