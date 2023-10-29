@@ -194,7 +194,9 @@ Find a specific ID in the DB:
 
 This code retrieves a specific user with ID 62 from the database.
 
-It's essential to use the convention `set[Attribute]` for specific attribute handling:
+It
+
+'s essential to use the convention `set[Attribute]` for specific attribute handling:
 
 ```php
 public function setPasswordAttribute($password) {
@@ -340,3 +342,10 @@ class AppServiceProvider
     {
         Model::unguard();
     }
+
+if guarded is disabled NEVER do it
+Post::create(request()->all())
+
+```
+
+```
