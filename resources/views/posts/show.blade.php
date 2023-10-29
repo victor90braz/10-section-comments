@@ -67,12 +67,11 @@
                 </header>
 
                 <main class="mt-6">
-                    <textarea   name="body"
-                                class="w-full text-sm focus:outline-none focus:ring p-2 border border border-gray-300"
-                                cols="30" rows="5" placeholder="Quick, think of something to say!"
-                    >
-
-                    </textarea>
+                    <textarea name="body"
+                              class="w-full text-sm focus:outline-none focus:ring border border border-gray-300"
+                              cols="30"
+                              rows="5"
+                              placeholder="Quick, think of something to say!"></textarea>
                 </main>
 
                 <div class="mt-1 flex justify-end">
