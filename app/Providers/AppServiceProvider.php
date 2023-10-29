@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Illuminate\Contracts\Pagination\Paginator;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -29,5 +29,7 @@ class AppServiceProvider extends ServiceProvider
         Paginator::useBootstrapThree()
         Paginator::useTailwind()
         */
+
+        Model::unguard();
     }
 }
