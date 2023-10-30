@@ -28,7 +28,7 @@
             </main>
 
             <div class="mt-1 flex justify-end">
-                <x-submit-button />
+                <x-submit-button>Post</x-submit-button>
             </div>
         </form>
     </x-panel>
